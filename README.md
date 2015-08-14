@@ -1,4 +1,4 @@
-# iasdbecoremi
+# COREMI ReST API
 
 Rest API created in order to gather all the info required for statistics of the Communion, relationship and mission (base of the discipleship) in the church.
 
@@ -12,34 +12,34 @@ Rest API created in order to gather all the info required for statistics of the 
 | POST     | http://[hostname]:[port]/coremi/api/login | Sign in with an existing user. |
 | PUT     | http://[hostname]:[port]/coremi/api/usuarios/[usuario_email] | Update an existing user. |
 | PUT     | http://[hostname]:[port]/coremi/api/usuarios/[usuario_email] | Delete a user. |
+<br />
+#### List Users
 
-### List Users
-
-**Example
-```sh
+>**Example**
+>```sh
 curl -i http://localhost:8000/coremi/api/usuarios
 ```
 
-**Response
-```json
+>**Response**
+>```json
 {
     "usuarios": [
         {
             "administrador": true, 
-            "apepaterno": "Torrejon", 
+            "apepaterno": "apellido", 
             "id": 1, 
-            "nombre1": "Ramiro", 
-            "nombre2": "Jhonatan", 
+            "nombre1": "nombre", 
+            "nombre2": "segundo_nombre", 
             "nombre3": null, 
-            "usuario": "ramijtc@gmail.com"
+            "usuario": "email@dominio.com"
         }, {
             "administrador": true, 
-            "apepaterno": "Torrejon", 
-            "id": 1, 
-            "nombre1": "Ramiro", 
-            "nombre2": "Jhonatan", 
+            "apepaterno": "apellido2", 
+            "id": 2, 
+            "nombre1": "nombre2", 
+            "nombre2": "segundo_nombre", 
             "nombre3": null, 
-            "usuario": "ramijtc@gmail.com"
+            "usuario": "email2@dominio.com"
         }
     ]
 }
