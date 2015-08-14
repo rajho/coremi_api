@@ -6,7 +6,7 @@ Rest API created in order to gather all the info required for statistics of the 
 
 | HTTP Method | URI          | Action |
 | ------------- | ----------- | ----------- |
-| GET      | http://[hostname]:[port]/coremi/api/usuarios | Retrieve list of users with a limit of 100 . |
+| GET      | http://[hostname]:[port]/coremi/api/usuarios | [Retrieve list of users with a limit of 100.](https://github.com/rajho92/iasdbecoremi#list-users) |
 | GET     | http://[hostname]:[port]/coremi/api/usuarios/[usuario_email] | Retrieve a user. |
 | POST     | http://[hostname]:[port]/coremi/api/usuarios | Create a new user. |
 | POST     | http://[hostname]:[port]/coremi/api/login | Sign in with an existing user. |
