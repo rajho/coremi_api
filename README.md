@@ -13,15 +13,21 @@ Rest API created in order to gather all the info required for statistics of the 
 | PUT     | http://[hostname]:[port]/coremi/api/usuarios/[usuario_email] | Update an existing user. |
 | PUT     | http://[hostname]:[port]/coremi/api/usuarios/[usuario_email] | Delete a user. |
 <br />
+
+These are the actions you can make:
+
+* [List Users](https://github.com/rajho92/iasdbecoremi#list-users)
+
+<br />
 #### List Users
 
->**Example**
->```sh
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Example**
+```sh
 curl -i http://localhost:8000/coremi/api/usuarios
 ```
 
->**Response**
->```json
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Response**
+```json
 {
     "usuarios": [
         {
