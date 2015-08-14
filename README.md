@@ -14,7 +14,7 @@ Rest API created in order to gather all the info required for statistics of the 
 | DELETE     | http://[hostname]:[port]/coremi/api/usuarios/[usuario_email] | [Delete a user.](https://github.com/rajho92/iasdbecoremi#delete-a-user) |
 <br />
 
-These are the actions you can make:
+These are the actions you can do:
 
 * [List users](https://github.com/rajho92/iasdbecoremi#list-users)
 * [Retrieve a user](https://github.com/rajho92/iasdbecoremi#retrieve-a-user)
@@ -23,7 +23,7 @@ These are the actions you can make:
 * [Update attributes of a user](https://github.com/rajho92/iasdbecoremi#update-user)
 * [Delete a user](https://github.com/rajho92/iasdbecoremi#delete-a-user)
 
-<br />
+
 #### List users
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Example**
