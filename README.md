@@ -1,2 +1,46 @@
 # iasdbecoremi
-Backend Project created in order to gather all the info required for statistics of the Communion, relationship and mission(base of the discipleship of the church)  in the church.
+
+Rest API created in order to gather all the info required for statistics of the Communion, relationship and mission (base of the discipleship) in the church.
+
+## Http Methods
+
+| HTTP Method | URI          | Action |
+| ------------- | ----------- | ----------- |
+| GET      | http://[hostname]:[port]/coremi/api/usuarios | Retrieve list of users with a limit of 100 . |
+| GET     | http://[hostname]:[port]/coremi/api/usuarios/[usuario_email] | Retrieve a user. |
+| POST     | http://[hostname]:[port]/coremi/api/usuarios | Create a new user. |
+| POST     | http://[hostname]:[port]/coremi/api/login | Sign in with an existing user. |
+| PUT     | http://[hostname]:[port]/coremi/api/usuarios/[usuario_email] | Update an existing user. |
+| PUT     | http://[hostname]:[port]/coremi/api/usuarios/[usuario_email] | Delete a user. |
+
+### List Users
+
+**Example
+```sh
+curl -i http://localhost:8000/coremi/api/usuarios
+```
+
+**Response
+```json
+{
+    "usuarios": [
+        {
+            "administrador": true, 
+            "apepaterno": "Torrejon", 
+            "id": 1, 
+            "nombre1": "Ramiro", 
+            "nombre2": "Jhonatan", 
+            "nombre3": null, 
+            "usuario": "ramijtc@gmail.com"
+        }, {
+            "administrador": true, 
+            "apepaterno": "Torrejon", 
+            "id": 1, 
+            "nombre1": "Ramiro", 
+            "nombre2": "Jhonatan", 
+            "nombre3": null, 
+            "usuario": "ramijtc@gmail.com"
+        }
+    ]
+}
+```
