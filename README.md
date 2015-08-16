@@ -165,6 +165,9 @@ curl -i -H "Content-Type: application/json" -X PUT -d '{"nombredos":"otro_segund
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Response**
 ```json
 {
+    "data": {
+        "nombredos": "otro_segundo_nombre"
+    }, 
     "reason": "", 
     "statusCode": 200, 
     "sucess": "True"
